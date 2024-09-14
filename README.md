@@ -24,7 +24,7 @@ docker run -p 9092:9092 -p 5000:5000 kafka-scraper-api
    - View the latest data: [http://127.0.0.1:5000/get-data](http://127.0.0.1:5000/get-data)
    - Download the data as a JSON file: [http://127.0.0.1:5000/download-data](http://127.0.0.1:5000/download-data)
 
-   **Note**: The JSON file is updated as the scraper runs and the data refreshes when the page is reloaded.
+   **Note**: The JSON file is updated as the scraper runs the data refreshes when the page is reloaded.
 
 ## Project Overview
 
