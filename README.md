@@ -35,6 +35,9 @@ docker run -p 9092:9092 -p 5000:5000 kafka-scraper-api
 - **Kafka Topic Creation**: A Kafka topic is created using the `producer_script.py` file.
 
 - **Message Sending and Listening**: Messages are sent to and listened from a Kafka topic.
+- kafka-console-producer.sh --topic hello_kafka --bootstrap-server localhost:9092
+- kafka-console-consumer.sh --topic hello_kafka --from-beginning --bootstrap-server localhost:9092
+
 
 - **Kafka Configuration**: The `kraft-server.properties` file configures Kafka with the necessary server settings.
 
@@ -104,7 +107,7 @@ docker run -p 9092:9092 -p 5000:5000 kafka-scraper-api
 - **`Dockerfile`**: Contains the Docker setup for the project.
 - **`rest_api.py`**: The Flask REST API for accessing and downloading the scraped data.
 - **`scraper_script.py`**: The script that scrapes data from the website.
-- **`producer_script.py`**: Sends scraped data to a Kafka topic.
+- **`producer_script.py`**: For creating kafka topic
 - **`kraft-server.properties`**: Kafka server configuration file.
 - **`requirements.txt`**: Lists the required Python packages for the project.
 
